@@ -42,7 +42,7 @@ foreach ($itemDirectory in $directories)
                 Remove-Item $file.FullName -Force
                 Write-Host "Deleted: $($file.FullName)"
             } catch {
-                Write-Host "Skipped: $($file.FullName) - In use or access denied"
+                Write-Host "Skipped: $($file.FullName) - In use or access denied..."
             }
         }
 
